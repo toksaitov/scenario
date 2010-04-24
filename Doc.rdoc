@@ -1,6 +1,7 @@
 = Scenario
 
 WARNING: THIS IS JUST A PROTOTYPE!
+
 Do not expect it to do much and do not ask for documentation or tests
 
 == Description
@@ -23,12 +24,17 @@ Coming soon today
 == Samples
 
 Some Scenario sample:
-http://www.flickr.com/photos/toksaitov/4547522797/
-http://www.flickr.com/photos/toksaitov/4548158114/
-http://www.flickr.com/photos/toksaitov/4547522217/
+
+http://www.flickr.com/photos/toksaitov/4547522797
+
+http://www.flickr.com/photos/toksaitov/4548158114
+
+http://www.flickr.com/photos/toksaitov/4547522217
 
 Consider visiting a Flickr Image Set for the full list of Scenario samples.
+
 You can check descriptions for links to respective code Gists.
+
 http://www.flickr.com/photos/toksaitov/sets/72157623921551004/
 
 == Requirements
