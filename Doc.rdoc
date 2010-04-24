@@ -75,9 +75,11 @@ need to resolve all application dependencies manually.
 You can also save you scenarios into the following folder:
 
 For *nix users:
+
     $HOME/.scenario/scenarios/
 
 For Microsoft Windows users:
+
     %HOME%\.scenario\scenarios\
 
 After that, it will be possible to run your scenarios just by specifying their names
