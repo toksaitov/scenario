@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# -*- ruby -*-
+#
+#    Scenario is a Ruby domain-specific language for graphics.
+#    Copyright (C) 2010  Dmitrii Toksaitov
+#
+#    This file is part of Scenario.
+#
+#    Released under the MIT License.
+
+require 'rubygems'
+
+begin
+  require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'scenario'))
+
+  exit!(Scenario::SERVICES[:starter].run())
+rescue Exception => e
+  puts "Fatal error: #{e.message}", e.backtrace
+  exit!(-1)
+end
+
+# vim: syntax=ruby

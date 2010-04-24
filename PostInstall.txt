@@ -1,0 +1,6 @@
+Thank you for installing Scenario
+
+Please be sure to read README.rdoc and History.txt
+for useful information about this release.
+
+For more info, visit http://github.com/toksaitov/scenario

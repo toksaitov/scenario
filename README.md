@@ -1,0 +1,196 @@
+Scenario
+========
+
+WARNING: THIS IS JUST A PROTOTYPE!  
+Do not expect it to do much and do not ask for documentation or tests
+
+Description
+-----------
+
+Scenario is a Ruby object oriented domain specific language for graphics.  
+Currently the Scenario subsystem is a combination of the following elements:
+
+* *objects* - encapsulate representation of graphical objects
+
+* *strategies* - describes changes of the state for the object in response  
+to a received event (timer tick, mouse click, etc.)
+
+* *scenarios* - a combination of objects and strategies that forms a final application
+
+Example
+-------
+
+Coming soon today
+
+Samples
+-------
+
+Some Scenario sample:  
+  
+[![Scenario Samples: Rubik's Cubes](http://farm5.static.flickr.com/4029/4547522715_2d414c4939_m.jpg)](http://www.flickr.com/photos/toksaitov/4547522715/)  
+[Rubik's Cubes](http://www.flickr.com/photos/toksaitov/4547522715/)  
+  
+[![Scenario Samples: Clocks](http://farm5.static.flickr.com/4007/4548158114_e0ae421b97_m.jpg)](http://www.flickr.com/photos/toksaitov/4548158114/)  
+[Clock](http://www.flickr.com/photos/toksaitov/4547522715/)  
+  
+[![Scenario Samples: Multiple Moving Lights](http://farm5.static.flickr.com/4058/4547522217_f05e21bdd6_m.jpg)](http://www.flickr.com/photos/toksaitov/4547522217/)  
+[Lights](http://www.flickr.com/photos/toksaitov/4547522715/)  
+
+Consider visiting a Flickr Image Set for the full list of Scenario samples.  
+You can check descriptions for links to respective code Gists.  
+
+<http://www.flickr.com/photos/toksaitov/sets/72157623921551004/>
+
+Requirements
+------------
+
+* Ruby 1.8.6 or later
+
+Dependencies
+------------
+
+* ruby-opengl (version 0.6.0 or later)
+
+Extra Dependencies
+------------------
+
+In order to run some scenarios with textures you need to install
+
+* rmagick (version 2.12.0 or later)
+
+This library is currently required by the following scenarios
+
+* cube
+* rubiks
+
+Installation
+------------
+
+### Manual Installation
+
+You can clone, download or whatever else to get the application package from the *github*.
+In this case you need to use *scenario* script directly from the *bin* directory and you
+need to resolve all application dependencies manually.
+
+Application Usage
+-----------------
+
+1. Write a scenario and save it with an `.rb` extension.
+
+2. Run your scenario with the following command:
+
+    scenario -s <your_scenario_file_full_path>
+
+You can also save you scenarios into the following folder:
+
+For *nix users:
+
+    $HOME/.scenario/scenarios/
+
+For Microsoft Windows users:
+
+    %HOME%\.scenario\scenarios\
+
+After that, it will be possible to run your scenarios just by specifying their names
+
+    scenario -s <your_scenario_file_name>
+
+You can also run all samples bundled with this project just by specifying their names
+
+    scenario -s <sample_file_name>
+
+Currently the following samples are available
+
+* axes
+* clocks
+* cone
+* cube
+* pipe
+* planets
+* rubiks
+* sphere
+* spheres
+* spiral
+* worm
+* worm_swarm
+
+You can get the source code of these samples from the following library folder:
+
+    lib/scenario/scenarios
+
+Command Line Usage
+------------------
+
+The list of command line options can be obtained from the Scenario executable by one of the following calls:
+
+    scenario -h
+    scenario --help
+
+Application Directory
+---------------------
+
+*.scenario* is a default application directory that can be usually found under  
+a path specified either in the *SCENARIO_USER_BASE* or in the `HOME` environmental variable.
+
+### Application Directory Structure
+
+    .scenario
+    |-logs
+    |-objects
+    |-scenarios
+    |-strategies
+
+*.scenario* - contains all configuration files
+
+* _logs_ - contains application log files
+
+* _objects_ - contains all user defined objects
+
+* _scenarios_ - contains all user defined scenarios (you can load them just by specifying their names)
+
+* _strategies_ - contains all user defined strategies
+
+Development
+-----------
+
+### Source Repositories
+
+Scenario is currently hosted at GitHub.
+
+The github web page
+
+* <http://github.com/toksaitov/scenario>
+
+The public git clone URL
+
+* <http://github.com/toksaitov/scenario.git>
+
+Contact Information
+-------------------
+
+Author: Toksaitov Dmitrii, <toksaitov.d@gmail.com>
+
+License
+-------
+
+(The MIT License)
+
+Copyright (c) 2010 Dmitrii Toksaitov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
